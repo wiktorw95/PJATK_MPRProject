@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Form</title>
+</head>
+<body>
+<form action="#" th:action="@{/editForm}" th:object="${cat}" method="post">
+  <label for="name">Imie:</label>
+  <input type="text" th:field="*{name}" id="name" required />
+
+  <label for="age">Wiek:</label>
+  <input type="text" th:field="*{age}" id="age" required />
+
+  <label for="gender">Płeć:</label>
+  <input type="text" th:field="*{gender}" id="gender" required />
+
+  <label for="race">Rasa:</label>
+  <input type="text" th:field="*{race}" id="race" required />
+
+  <button type="submit">Update</button>
+</form>
+<table>
+  <tr>
+    <td>Imie</td>
+    <td>Wiek</td>
+    <td>Płeć</td>
+    <td>Rasa</td>
+  </tr>
+  <tr th:each="Cat : ${catList}">
+    <td th:text="${Cat.name}"></td>
+    <td th:text="${Cat.age}"></td>
+    <td th:text="${Cat.gender}"></td>
+    <td th:text="${Cat.race}"></td>
+  </tr>
+</table>
+</body>
+</html>

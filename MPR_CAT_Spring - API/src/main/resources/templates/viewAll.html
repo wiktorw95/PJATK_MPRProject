@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>View All</title>
+</head>
+<body>
+<h1>The Cats</h1>
+<table>
+    <tr>
+        <td>Imie</td>
+        <td>Wiek</td>
+        <td>Płeć</td>
+        <td>Rasa</td>
+    </tr>
+    <tr th:each="Cat : ${catList}">
+        <td th:text="${Cat.name}"></td>
+        <td th:text="${Cat.age}"></td>
+        <td th:text="${Cat.gender}"></td>
+        <td th:text="${Cat.race}"></td>
+    </tr>
+</table>
+</body>
+</html>

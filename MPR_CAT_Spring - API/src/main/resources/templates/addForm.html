@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Form</title>
+</head>
+<body>
+<form action="#" th:action="@{/addForm}" th:object="${cat}" method="post">
+    <input type="text" placeholder="Imie" th:field="${cat.name}">
+    <input type="text" placeholder="Wiek" th:field="${cat.age}">
+    <input type="text" placeholder="Płeć" th:field="${cat.gender}">
+    <input type="text" placeholder="Rasas" th:field="${cat.race}">
+
+    <input id="submit" type="submit" value="Submit">
+</form>
+</body>
+</html>
