@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Form</title>
+</head>
+<body>
+<form action="#" th:action="@{/addForm}" th:object="${car}" method="post">
+    <input type="text" placeholder="marka" th:field="${car.make}">
+    <input type="text" placeholder="color" th:field="${car.color}">
+
+    <input id="submit" type="submit" value="Submit">
+</form>
+</body>
+</html>

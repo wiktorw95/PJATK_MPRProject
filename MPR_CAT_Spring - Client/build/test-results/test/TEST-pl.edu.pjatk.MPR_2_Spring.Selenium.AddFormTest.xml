@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pl.edu.pjatk.MPR_2_Spring.Selenium.AddFormTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-12-09T11:17:12" hostname="GDA303-02" time="1.628">
+  <properties/>
+  <testcase name="testAddForm()" classname="pl.edu.pjatk.MPR_2_Spring.Selenium.AddFormTest" time="1.628"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

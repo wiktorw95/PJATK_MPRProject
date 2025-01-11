@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Form</title>
+</head>
+<body>
+<form action="#" th:action="@{/editForm}" th:object="${car}" method="post">
+  <label for="make">Marka:</label>
+  <input type="text" th:field="*{make}" id="make" required />
+
+  <label for="model">Model:</label>
+  <input type="text" th:field="*{color}" id="model" required />
+
+  <button type="submit">Update</button>
+</form>
+<table>
+  <tr>
+    <td>Name</td>
+    <td>Color</td>
+  </tr>
+  <tr th:each="Car : ${carList}">
+    <td th:text="${Car.make}"></td>
+    <td th:text="${Car.color}"></td>
+  </tr>
+</table>
+</body>
+</html>
